@@ -3,9 +3,12 @@
     font-family: Quicksand;
 }
 /* main cotent area  */
-main{
+
+.footer-section, 
+.card, 
+.story,
+.hero{
     max-width: 85%;
-    /* background-color: aquamarine; */
     margin-left: 8%;
 }
 /* header section  */
@@ -35,7 +38,12 @@ nav > ul > li > a{
     border-radius: 12px;
 }
 /* shared style  */
-.chevron, .item-container, .hero, .header-container, .logo, nav> ul{
+.chevron, 
+.item-container, 
+.hero, 
+.header-container, 
+.logo, 
+nav> ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,9 +61,12 @@ nav > ul > li > a{
     margin-top: 5px;
 }
 /* card section  */
+.card-background{
+    background-image: url(./assets/bg.png);
+}
 .card{
     margin-top: 10%;
-    background-image: url(./assets/bg.png);
+    
 }
 .card-heading{
     font-size: 46px;
@@ -118,9 +129,11 @@ nav > ul > li > a{
     margin-top: 6%;
 }
 /* story section  */
+.story-background{
+    background-image: url(./assets/bg.png), linear-gradient(#F7F7F7, rgba(254, 161, 1, 0.3));
+}
 .story{
     margin-top: 10%;
-    background-image: url(./assets/bg.png), linear-gradient(180deg, #F7F7F7, #FFF4DC);
 }
 
 .story-btn{
@@ -189,4 +202,79 @@ nav > ul > li > a{
 .story-container-btn{
     margin-bottom: 5%;
 }
+/* footer section  */
+footer{
+    background-color: #01ACFD;   
+}
+.description-logo > img{
+    height: 82px;
+    width: 82px;
+}
+.description-logo > p{
+    font-size: 42px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-left: 1%;
+}
+.description-text{
+    margin-left: 2%;
+    color: #FFFFFF;
+}
+.sitemap > ul > li > a{
+    text-decoration: none;
+}
+.description-logo{
+    display: flex;
+    align-items: center;
+    margin-top: -10%;
+}
+.description{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+.social, .sitemap > p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.map-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.map-links > a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400px;
+    color: #FFFFFF;
+}
+.sitemap{
+    width: 33%;
+    margin-left: 15%; 
+}
+.social-links{
+    display: flex;
+    gap: 2%;
+}
+.social{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.footer-section{
+    display: flex;
+    padding-top: 5%;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+
 
