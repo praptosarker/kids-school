@@ -1,6 +1,12 @@
+/* universal section */
+*{
+    font-family: Quicksand;
+}
 /* main cotent area  */
 main{
-    width: 80%;
+    max-width: 85%;
+    /* background-color: aquamarine; */
+    margin-left: 8%;
 }
 /* header section  */
 .logo > .logo-image{
@@ -19,7 +25,7 @@ nav > ul > li > a{
     font-weight: 400px;
     font-size: 20px;
 }
-.header-container > button{
+.header-btn, .hero-btn{
     background-color: #FEA301;
     color: #FFFFFF;
     font-size: 20px;
@@ -29,11 +35,85 @@ nav > ul > li > a{
     border-radius: 12px;
 }
 /* shared style  */
-.header-container , .logo , nav > ul{
+.chevron, .item-container, .hero, .header-container, .logo, nav> ul{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header-container, nav > ul{
+.hero , .header-container, nav > ul{
     gap: 20%;
+}
+/* hero section  */
+.hero-text > h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+.hero-btn{
+    background-color: #111111;
+    margin-top: 5px;
+}
+/* card section  */
+.card{
+    margin-top: 10%;
+    background-image: url(./assets/bg.png);
+}
+.card-heading{
+    font-size: 46px;
+    text-align: center;
+}
+.item{
+    text-align: center;
+    width: 26%;   
+    border: #DEF5FF;
+    background: linear-gradient(#DEF5FF, #FFFFFF);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 50px;
+    border-radius: 18px;
+}
+.item-heading{
+    font-size: 25px;
+}
+.item-gradient1{
+    background: linear-gradient(#FFF4DC, #FFFFFF);
+}
+.item-gradient2{
+    background: linear-gradient(#EEE1FF, #FFFFFF);
+}
+.item-btn{
+    border: none;
+    background: none;
+    font-size: 15px;
+    font-weight: 300px;
+    margin-top: 5%;
+}
+.item-btn-color1{
+    color: #64C8FF;
+}
+.item-btn-color2{
+    color: #F0AA00;
+}
+.item-btn-color3{
+    color: #8700FF;
+}
+.item-container{
+    gap: 10%;
+    margin-top: 10%;
+}
+.chevron-left, .chevron-right{
+    height: 60px;
+    width: 60px;
+    background-color: #FEA301;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.chevron-dimension{
+    height: 24px;
+    width: 15px;
+    color: #FFFFFF;
+}
+.chevron{
+    gap: 2%;
+    margin-top: 6%;
 }
