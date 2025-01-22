@@ -17,6 +17,12 @@ marquee{
 }
 
 /* header section--------------------------------------------------  */
+.logo{
+    margin-left: 1%;
+}
+.header-btn{
+    margin-left: -3%;
+}
 .logo > .logo-image{
     height: 62px;
     width: 62px;
@@ -79,6 +85,10 @@ nav> ul{
     .logo{
         display: flex;
         justify-content: space-between;
+        border: 2px solid orange;
+        padding: 1rem;
+        margin: 0px;
+        width: 100%;
     }
 }
 
