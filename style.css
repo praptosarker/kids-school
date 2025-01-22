@@ -1,9 +1,13 @@
-/* universal section */
+/* universal section------------------------------------------------ */
 *{
     font-family: Quicksand;
 }
-/* main cotent area  */
+marquee{
+    position: absolute;
+    margin-top: 2rem;
+}
 
+/* main content area-----------------------------------------------  */
 .footer-section, 
 .card, 
 .story,
@@ -11,7 +15,8 @@
     max-width: 85%;
     margin-left: 8%;
 }
-/* header section  */
+
+/* header section--------------------------------------------------  */
 .logo > .logo-image{
     height: 62px;
     width: 62px;
@@ -37,7 +42,8 @@ nav > ul > li > a{
     border: none;
     border-radius: 12px;
 }
-/* shared style  */
+
+/* shared style-------------------------------------------  */
 .chevron, 
 .item-container, 
 .hero, 
@@ -51,7 +57,32 @@ nav> ul{
 .hero , .header-container, nav > ul{
     gap: 20%;
 }
-/* hero section  */
+
+/* header section responsive for small devices-------------------------  */
+.menubar{
+    display: none;
+}
+@media only screen and (max-width: 576px){
+    .menubar{
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo > p, 
+    nav,
+    .header-btn{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* hero section-----------------------------------------------------  */
 .hero-text > h1{
     font-size: 56px;
     font-weight: bold;
@@ -60,7 +91,17 @@ nav> ul{
     background-color: #111111;
     margin-top: 5px;
 }
-/* card section  */
+
+/* hero section responsive for small devices--------------------------------  */
+@media only screen and (max-width: 576px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* card section-----------------------------------------------------  */
 .card-background{
     background-image: url(./assets/bg.png);
 }
@@ -128,7 +169,23 @@ nav> ul{
     gap: 2%;
     margin-top: 6%;
 }
-/* story section  */
+
+/* card section responsive for small devices----------------------------  */
+@media only screen and (max-width: 576px){
+    .item-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        width: 95%;
+        margin: 3%;
+    }
+    .chevron{
+        display: none;
+    }
+}
+
+/* story section------------------------------------------------------  */
 .story-background{
     background-image: url(./assets/bg.png), linear-gradient(#F7F7F7, rgba(254, 161, 1, 0.3));
 }
@@ -202,7 +259,18 @@ nav> ul{
 .story-container-btn{
     margin-bottom: 5%;
 }
-/* footer section  */
+
+/* story section responsive for small devices---------------------------  */
+@media only screen and (max-width: 576px){
+    .story1{
+        display: none;
+    }
+    .story-btn-small{
+        margin-top: -5%;
+    }
+}
+
+/* footer section----------------------------------------------------  */
 footer{
     background-color: #01ACFD;   
 }
@@ -275,6 +343,31 @@ footer{
     padding-bottom: 2%;
 }
 
+/* footer section responsive for small devices-------------------------  */
+@media only screen and (max-width: 576px){
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .sitemap, .description, .social{
+        width: 100%;
+    }
+    .sitemap, .social{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 
-
-
+/* hover section ---------------------------------------------- */
+button:hover{
+    cursor: pointer;
+    background-color: #01ACFD;
+}
+.chevron-left:hover{
+    background-color: rgba(135, 0, 255, 0.9);
+    cursor: pointer;
+}
+.chevron-right:hover{
+    background-color: rgba(135, 0, 255, 0.9)
+}
